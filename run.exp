@@ -1,11 +1,9 @@
-#!/usr/bin/env expect
-
 # documentation at
 # https://web.archive.org/web/20091022032516/https://www.lri.fr/~gelly/MoGo_Download.htm
 # (not necessarily the last available snapshot on the wayback machine, but I
 # don't think the page has been updated in years anyways.)
 spawn mogor --19 --time 10 --nbThreads 8 --pondering 0
-expect "tried to open openingValues_19"
+#expect "tried to open openingValues_19"
 send "boardsize 19\r"
 expect "=" # wait for ack
 send "komi 6.5\r"
